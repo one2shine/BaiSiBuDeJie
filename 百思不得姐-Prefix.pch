@@ -1,0 +1,34 @@
+//
+//  百思不得姐-Prefix.pch
+//  百思不得姐
+//
+//  Created by mac on 16/3/9.
+//  Copyright © 2016年 one2shine. All rights reserved.
+//
+
+#ifndef ______Prefix_pch
+#define ______Prefix_pch
+
+#import "BSConst.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ______Prefix_pch */
+
+
+#ifdef DEBUG
+#define MYLog(...) NSLog(__VA_ARGS)
+#else
+#define MYLog(...)
+#endif
+
+#define MYLogFunc NSLog(@"%s",__func__)
+
+#define BSRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define BSGlobalColor [UIColor colorWithRed:225/255.0 green:225/255.0 blue:225/255.0 alpha:1.0]
+#define BSRandomColor [UIColor colorWithRed:arc4random_uniform(255) /255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0]
+
+#define BSScreenHeight [UIScreen mainScreen].bounds.size.height
+#define BSScreenWidth [UIScreen mainScreen].bounds.size.width
+#import "UIBarButtonItem+extension.h"
+#import "UIView+Extension.h"

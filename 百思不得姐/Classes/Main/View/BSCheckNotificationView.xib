@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.59999999999999998" contentMode="scaleToFill" id="iN0-l3-epB" customClass="BSCheckNotificationView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pushguidemid" translatesAutoresizingMaskIntoConstraints="NO" id="Y6q-lh-GhC">
+                    <rect key="frame" x="180" y="238" width="240" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="Obf-L5-R4P"/>
+                        <constraint firstAttribute="width" constant="240" id="bJy-Ok-gkV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pushguidetop" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-Lr-4Qs">
+                    <rect key="frame" x="175" y="163" width="250" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="8Kh-v7-nlo"/>
+                        <constraint firstAttribute="width" constant="250" id="laB-4N-y2s"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pushguidebot" translatesAutoresizingMaskIntoConstraints="NO" id="TWN-Fr-I8H">
+                    <rect key="frame" x="235" y="368" width="130" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="2Yd-6W-Lfx"/>
+                        <constraint firstAttribute="height" constant="90" id="osD-CG-MHt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBx-nz-7kI">
+                    <rect key="frame" x="235" y="418" width="90" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="myi-Bh-vf5"/>
+                        <constraint firstAttribute="height" constant="40" id="qp1-pW-o1x"/>
+                    </constraints>
+                    <connections>
+                        <action selector="dismissCheckView:" destination="iN0-l3-epB" eventType="touchUpInside" id="iPq-Lm-8MM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TWN-Fr-I8H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="27m-dh-PDB"/>
+                <constraint firstItem="TWN-Fr-I8H" firstAttribute="top" secondItem="Y6q-lh-GhC" secondAttribute="bottom" constant="5" id="K6g-9a-n1v"/>
+                <constraint firstItem="XBx-nz-7kI" firstAttribute="leading" secondItem="TWN-Fr-I8H" secondAttribute="leading" id="SQ7-xZ-Ic2"/>
+                <constraint firstItem="Y6q-lh-GhC" firstAttribute="top" secondItem="HFE-Lr-4Qs" secondAttribute="bottom" constant="20" id="fai-zr-WR0"/>
+                <constraint firstItem="Y6q-lh-GhC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iQi-Dz-Pxy"/>
+                <constraint firstItem="HFE-Lr-4Qs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qkb-qi-QsF"/>
+                <constraint firstItem="Y6q-lh-GhC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qtR-9W-aQ4"/>
+                <constraint firstItem="XBx-nz-7kI" firstAttribute="bottom" secondItem="TWN-Fr-I8H" secondAttribute="bottom" id="vq9-5w-Yh3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="235" y="253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pushguidebot" width="130" height="90"/>
+        <image name="pushguidemid" width="240" height="125"/>
+        <image name="pushguidetop" width="250" height="55"/>
+    </resources>
+</document>

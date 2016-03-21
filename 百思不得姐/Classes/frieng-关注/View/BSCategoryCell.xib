@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BSCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dot-k2-UnR" userLabel="左侧竖线">
+                        <rect key="frame" x="0.0" y="8" width="3" height="27"/>
+                        <color key="backgroundColor" red="1" green="0.1223576613" blue="0.1782789162" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="BhQ-CH-qlR"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq5-w8-YEY" userLabel="底部分隔线">
+                        <rect key="frame" x="8" y="42" width="304" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IZz-gZ-qtN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tq5-w8-YEY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BD1-UV-QXy"/>
+                    <constraint firstItem="dot-k2-UnR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="ITq-sP-ZB0"/>
+                    <constraint firstItem="dot-k2-UnR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KIX-Ib-e3M"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Tq5-w8-YEY" secondAttribute="bottom" constant="1" id="Yn9-0j-8eU"/>
+                    <constraint firstAttribute="bottom" secondItem="Tq5-w8-YEY" secondAttribute="bottom" id="aaD-qJ-OBs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tq5-w8-YEY" secondAttribute="trailing" id="g2B-8R-ftp"/>
+                    <constraint firstItem="dot-k2-UnR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oSM-1E-vDm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dot-k2-UnR" secondAttribute="bottom" id="obJ-hm-8ku"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="KIX-Ib-e3M"/>
+                        <exclude reference="Yn9-0j-8eU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="redView" destination="dot-k2-UnR" id="wf1-mr-aBg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
